@@ -6,7 +6,7 @@ export class BloodCholesterol extends Appointment {
     super(date, time);
   }
 
-  enerateResults() {
+  generateResults() {
     const { hours, mins } = getCurrentDateAndTime();
     let value = Math.floor(Math.random() * 15 + 1);
     let lastMealTime = `${hours}:${mins}`;
