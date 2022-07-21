@@ -8,3 +8,14 @@ export function getCurrentDateAndTime() {
 
   return { date, month, year, hours, mins };
 }
+
+export function setDateTime(day, month, year, hours, mins) {
+  return new Date(year, month, day, hours, mins);
+}
+
+export function formatDateTime(dateTime) {
+  return dateTime.toLocaleString("en-GB", {
+    dateStyle: "short",
+    timeStyle: "short",
+  });
+}

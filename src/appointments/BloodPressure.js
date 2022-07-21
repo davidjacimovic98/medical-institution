@@ -1,8 +1,8 @@
 import { Appointment } from "./Appointment.js";
 
 export class BloodPressure extends Appointment {
-  constructor(date, time) {
-    super(date, time);
+  constructor(day, month, year, hours, mins) {
+    super(day, month, year, hours, mins);
   }
 
   generateResults() {

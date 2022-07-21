@@ -13,6 +13,7 @@ export class Person {
   }
 
   postCreated() {
+    console.log();
     const { date, month, year, hours, mins } = getCurrentDateAndTime();
     console.log(
       `[${date}.${month}.${year} ${hours}:${mins}] ${this.constructor.name} ${this.firstName} ${this.lastName} created.`

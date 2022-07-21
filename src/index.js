@@ -21,8 +21,8 @@ dragan.chooseDoctor(milan);
 milan.choosePatient(dragan);
 // milan.choosePatient(david);
 
-milan.scheduleAppointment(dragan, new BloodSugar("25.08.2022.", "14:30"));
-milan.scheduleAppointment(dragan, new BloodPressure("26.08.2022.", "15:10"));
+milan.scheduleAppointment(dragan, new BloodSugar(1, 5, 2023, 7, 30));
+milan.scheduleAppointment(dragan, new BloodPressure(1, 9, 2024, 15, 25));
 // milan.scheduleAppointment(david, new BloodSugar("22.12.2020", "07:30"));
 
 dragan.setAppointment(milan.filterAppointments(dragan));

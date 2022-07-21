@@ -2,8 +2,8 @@ import { Appointment } from "./Appointment.js";
 import { getCurrentDateAndTime } from "../utils.js";
 
 export class BloodCholesterol extends Appointment {
-  constructor(date, time) {
-    super(date, time);
+  constructor(day, month, year, hours, mins) {
+    super(day, month, year, hours, mins);
   }
 
   generateResults() {
